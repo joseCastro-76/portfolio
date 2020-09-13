@@ -10,7 +10,6 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/profile', profile);
 app.use(express.static('./public'));
 
 app.set('views', './views');
