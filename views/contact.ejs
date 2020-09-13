@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/tailwind.css" type="text/css">
+        <title>Contact Jose</title>
+    </head>
+    <body class="bg-primary-300 w-full h-full overflow-hidden font-body">
+
+        <%- include('header'); -%>
+
+        <div class="flex justify-center w-screen h-screen">
+            <div class="mt-16 w-10/12 md:w-8/12 lg:w-1/2">
+                <form class="" action="/thanks" method="POST">
+                    <div class="flex flex-col mb-4">
+                        <label class="mb-2 text-secondary-100 text-xl" for="firstName">First Name:</label>
+                        <input class="rounded font-sans px-2 focus:outline-none" type="text" id="firstName" name="firstName">
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <label class="mb-2 mt-8 text-secondary-100 text-xl" for="lastName">Last Name:</label>
+                        <input class="rounded font-sans px-2 focus:outline-none" type="text" id="lastName" name="lastName">
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <label class="mb-2 mt-8 text-secondary-100 text-xl" for="email">Email:</label>
+                        <input class="rounded font-sans px-2 focus:outline-none" type="text" id="email" name="email">
+                    </div>
+
+                    <input class="mt-10 px-4 py-2 block mx-auto rounded bg-primary-200 text-xl text-sand-300" type="submit" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
